@@ -1,30 +1,24 @@
 
 import "./App.css";
 
-import React, { Component } from "react";
+import React, { useState} from "react";
 import Navbar from "./Components/Navbar";
 import News from "./Components/News";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import LoadingBar from "react-top-loading-bar";
 
-export default class App extends Component {
-  pageSize = 5;
-  apiKey =process.env.REACT_APP_NEWS_API
+export default  function  App () {
+ const pageSize = 5;
+  const apiKey =process.env.REACT_APP_NEWS_API
   //  i can fetch variable in env fileusing the process.env.variable name
 //  i will fetch my api key from environment variable and to do so i will make a file in react folder named env.local and it is
 //  by defaukt also added in git ingore folder
 // agar me koi bhi  environment ki shuruvat REACT_APP se shuravat karta hu then ill get access of that variabl in y react aplication
   
+const[progress,setProgress]=useState(0);
 
-  state = {
-    progress: 0,
-  };
 
-  setProgress = (progress) => {
-    this.setState({ progress: progress });
-  };
 
-  render() {
     return (
       <div>
         <Router>
@@ -32,7 +26,7 @@ export default class App extends Component {
           <LoadingBar
             height={3}
             color="#f11946"
-            progress={this.state.progress}
+            progress={progress}
           />
           <Routes>
             <Route
@@ -40,10 +34,10 @@ export default class App extends Component {
               path="/"
               element={
                 <News
-                  setProgress={this.setProgress}
+                  setProgress={setProgress}
                   key="general"
                   pageSize={5}
-                  apiKey={this.apikey}
+                  apiKey={apiKey}
                   country="in"
                   category="general"
                 />
@@ -54,10 +48,10 @@ export default class App extends Component {
               path="/business"
               element={
                 <News
-                  setProgress={this.setProgress}
+                  setProgress={setProgress}
                   key="business"
                   pageSize={5}
-                  apiKey={this.apikey}
+                  apiKey={apiKey}
                   country="in"
                   category="business"
                 />
@@ -69,10 +63,10 @@ export default class App extends Component {
               path="/home"
               element={
                 <News
-                  setProgress={this.setProgress}
+                  setProgress={setProgress}
                   key="general"
                   pageSize={5}
-                  apiKey={this.apiKey}
+                  apiKey={apiKey}
                   country="in"
                   category="general"
                 />
@@ -83,10 +77,10 @@ export default class App extends Component {
               path="/entertainment"
               element={
                 <News
-                  setProgress={this.setProgress}
+                  setProgress={setProgress}
                   key="entertainment"
                   pageSize={5}
-                  apiKey={this.apiKey}
+                  apiKey={apiKey}
                   country="in"
                   category="entertainment"
                 />
@@ -98,10 +92,10 @@ export default class App extends Component {
               path="/general"
               element={
                 <News
-                  setProgress={this.setProgress}
+                  setProgress={setProgress}
                   key="general"
                   pageSize={5}
-                  apiKey={this.apiKey}
+                  apiKey={apiKey}
                   country="in"
                   category="general"
                 />
@@ -112,10 +106,10 @@ export default class App extends Component {
               path="/health"
               element={
                 <News
-                  setProgress={this.setProgress}
+                  setProgress={setProgress}
                   key="health"
                   pageSize={5}
-                  apiKey={this.apiKey}
+                  apiKey={apiKey}
                   country="in"
                   category="health"
                 />
@@ -126,10 +120,10 @@ export default class App extends Component {
               path="/science"
               element={
                 <News
-                  setProgress={this.setProgress}
+                  setProgress={setProgress}
                   key="science"
                   pageSize={5}
-                  apiKey={this.apiKey}
+                  apiKey={apiKey}
                   country="in"
                   category="science"
                 />
@@ -141,10 +135,10 @@ export default class App extends Component {
               path="/sports"
               element={
                 <News
-                  setProgress={this.setProgress}
+                  setProgress={setProgress}
                   key="sports"
                   pageSize={5}
-                  apiKey={this.apiKey}
+                  apiKey={apiKey}
                   country="in"
                   category="sports"
                 />
@@ -155,10 +149,10 @@ export default class App extends Component {
               path="/technology"
               element={
                 <News
-                  setProgress={this.setProgress}
+                  setProgress={setProgress}
                   key="technology"
                   pageSize={5}
-                  apiKey={this.apiKey}
+                  apiKey={apiKey}
                   country="in"
                   category="technology"
                 />
@@ -169,7 +163,7 @@ export default class App extends Component {
       </div>
     );
   }
-}
+
 
 //  from here we are going to begin from class based components
 //  the name of my news website will be news monkey as it sounds exciting
