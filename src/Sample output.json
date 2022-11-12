@@ -1,0 +1,61 @@
+// 20221104112638
+// https://newsapi.org/v2/top-headlines?apiKey=c905df5c1a4e4ae8889160f7697b8746&q=cricket
+
+{
+    "status": "ok",
+    "totalResults": 4,
+    "articles": [
+      {
+        "source": {
+          "id": "news24",
+          "name": "News24"
+        },
+        "author": "Khanyiso Tshwaku",
+        "title": "Former Proteas star Cullinan has 'no regrets', disputes Faf du Plessis account of heated exchange",
+        "description": "Former Proteas batter Daryll Cullinan said he has no regrets over the kind of individual he has when he was an international cricketer in the aftermath of Faf du Plessis's book extract revelation.",
+        "url": "https://www.news24.com/sport/cricket/proteas/former-proteas-star-cullinan-has-no-regrets-disputes-faf-du-plessis-account-of-heated-exchange-20221104",
+        "urlToImage": "https://cdn.24.co.za/files/Cms/General/d/7538/419f3f4334b5440bbc2bd8b17afd289d.jpg",
+        "publishedAt": "2022-11-04T07:05:14+00:00",
+        "content": "<ul><li>Former Protea Daryll Cullinan said he has no regrets over the kind of individual he was when he played cricket.</li><li>Cullinan, a talented, yet polarising figure, was the centre of an extra… [+4602 chars]"
+      },
+      {
+        "source": {
+          "id": "google-news-au",
+          "name": "Google News (Australia)"
+        },
+        "author": "Digital Staff",
+        "title": "Former Pakistan PM and cricket legend Imran Khan shot in assassination attempt",
+        "description": "Imran Khan, 70, was six days into a protest procession, standing and waving to thousands of cheering supporters from the roof of a container truck when shots rang out.",
+        "url": "https://7news.com.au/news/crime/former-pakistan-pm-and-cricket-legend-imran-khan-shot-in-assassination-attempt-c-8751472",
+        "urlToImage": "https://images.7news.com.au/publication/C-8751472/e986289d833eb5ba36aafef6eff93f1fe0427bb6-16x9-x0y313w6000h3375.jpg?imwidth=1200",
+        "publishedAt": "2022-11-03T21:01:00+00:00",
+        "content": "Former Pakistan prime minister and cricket legend Imran Khan has been shot in the shin when his anti-government protest convoy came under attack in the east of the country in what his aides say was a… [+3265 chars]"
+      },
+      {
+        "source": {
+          "id": "espn-cric-info",
+          "name": "ESPN Cric Info"
+        },
+        "author": null,
+        "title": "PCB hands Umar Akmal three-year ban from all cricket | ESPNcricinfo.com",
+        "description": "Penalty after the batsman pleaded guilty to not reporting corrupt approaches | ESPNcricinfo.com",
+        "url": "http://www.espncricinfo.com/story/_/id/29103103/pcb-hands-umar-akmal-three-year-ban-all-cricket",
+        "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1099495_800x450.jpg",
+        "publishedAt": "2020-04-27T11:41:47Z",
+        "content": "Umar Akmal's troubled cricket career has hit its biggest roadblock yet, with the PCB handing him a ban from all representative cricket for three years after he pleaded guilty of failing to report det… [+1506 chars]"
+      },
+      {
+        "source": {
+          "id": "espn-cric-info",
+          "name": "ESPN Cric Info"
+        },
+        "author": null,
+        "title": "What we learned from watching the 1992 World Cup final in full again | ESPNcricinfo.com",
+        "description": "Wides, lbw calls, swing - plenty of things were different in white-ball cricket back then | ESPNcricinfo.com",
+        "url": "http://www.espncricinfo.com/story/_/id/28970907/learned-watching-1992-world-cup-final-full-again",
+        "urlToImage": "https://a4.espncdn.com/combiner/i?img=%2Fi%2Fcricket%2Fcricinfo%2F1219926_1296x729.jpg",
+        "publishedAt": "2020-03-30T15:26:05Z",
+        "content": "Last week, we at ESPNcricinfo did something we have been thinking of doing for eight years now: pretend-live ball-by-ball commentary for a classic cricket match. We knew the result, yes, but we tried… [+6823 chars]"
+      }
+    ]
+  }
